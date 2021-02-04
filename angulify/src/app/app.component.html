@@ -1,0 +1,60 @@
+<div *ngIf="identity">
+  <h1>{{title}}</h1>  
+
+</div>
+
+<div *ngIf="identity">
+  <h1>You are logged in</h1>
+</div>
+
+<div *ngIf="!identity" class="homeContainer">
+  <div class="content">
+    
+    <div class="loginContainer">
+      
+      <div class="titleContainer">
+        <h1 class="titleStyle">Login</h1>
+      </div>
+
+      <form  #loginForm="ngForm" (ngSubmit)="onSubmit()" class="loginContent">
+        <div class="inputContainer">
+          <input type="email" #email="ngModel" [(ngModel)]="user.email" name="email" id="input" class="input" placeholder="Email" required>
+        </div>
+        <div class="inputContainer">
+          <input type="password" #password="ngModel" [(ngModel)]="user.password" name="password" id="input" class="input" placeholder="Contrasenya" required>
+        </div>
+        <div class="inputContainer">
+          <input type="submit" class="submitLogin" name="submit-login" value="LogIn">
+        </div>
+      </form>
+
+    </div>
+    
+    <div class="registerContainer">
+      
+      <div class="titleContainer">
+        <h1 class="titleStyle">Register</h1>
+      </div>
+
+      <form  #registerForm="ngForm" class="registerContent">
+        <div class="inputContainer">
+          <input type="text" name="name" id="input" class="input" placeholder="Nom" required>
+        </div>
+        <div class="inputContainer">
+          <input type="text" name="lastName" id="input" class="input" placeholder="Cognoms" required>
+        </div>
+        <div class="inputContainer">
+          <input type="email" name="email" id="input" class="input" placeholder="Email" required>
+        </div>
+        <div class="inputContainer">
+          <input type="password" name="password" id="input" class="input" placeholder="Contrasenya" required>
+        </div>
+        <div class="inputContainer">
+          <input type="submit" class="submitLogin" name="submit-login" value="Registrar-se"/>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+

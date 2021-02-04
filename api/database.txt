@@ -1,0 +1,7 @@
+use angulify
+
+db.artist.save({
+    name: 'Dellafuente',
+    description: 'Trap Music',
+    image: 'null'
+})
