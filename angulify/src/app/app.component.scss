@@ -71,6 +71,12 @@ $lightGray: #b3b3b3;
     justify-content: center;
 }
 
+.button {
+  width: 40%;
+  height: 50px;
+  margin-top: 20px;
+}
+
 .input {
     width: 90%;
     height: 50px;
@@ -93,9 +99,57 @@ $lightGray: #b3b3b3;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     font-size: 18px;
+    transition: 0.3s;
+    cursor: pointer;
 
     &:hover {
         background: linear-gradient(to left, $green, #00792a);
-        transition: 1s all ease-in-out;
+        transition: 0.3s;
     }
+}
+
+.errorMessage {
+  position: absolute;
+  width: 97%;
+  height: 80px;
+  top: 0;
+  transition: 0.3s;
+  background-color: #a90000;
+  margin: 2%;
+  border-radius: 15px;
+}
+
+.topAlert {
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.loggedHomeContainer {
+  width: 100%;
+  height: 100%;
+  background-color: $hardGray;
+}
+
+.loggedHomeContent {
+  position: absolute;
+
+  width: 90%;
+  height: 70%;
+}
+
+.signOutButton {
+  width: 150px;
+  height: 50px;
+}
+
+.hiMessage {
+  height: 40px;
+  width: 100%;
+  color: #FFFFFF;
 }

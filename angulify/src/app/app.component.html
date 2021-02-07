@@ -1,56 +1,55 @@
-<div *ngIf="identity">
-  <h1>{{title}}</h1>  
-
-</div>
-
-<div *ngIf="identity">
-  <h1>You are logged in</h1>
+<div *ngIf="identity" class="loggedHomeContainer">
+  <app-navigation (logoutEvent)="logout()"></app-navigation>
+  <router-outlet></router-outlet>
 </div>
 
 <div *ngIf="!identity" class="homeContainer">
+  <div *ngIf="error" class="errorMessage">
+    <h3 class="topAlert">Error: {{error}}</h3>
+  </div>
   <div class="content">
-    
+
     <div class="loginContainer">
-      
+
       <div class="titleContainer">
-        <h1 class="titleStyle">Login</h1>
+        <h1 class="titleStyle">Entra</h1>
       </div>
 
-      <form  #loginForm="ngForm" (ngSubmit)="onSubmit()" class="loginContent">
+      <form  #loginForm="ngForm" (ngSubmit)="onSubmitLogin()" class="loginContent">
         <div class="inputContainer">
-          <input type="email" #email="ngModel" [(ngModel)]="user.email" name="email" id="input" class="input" placeholder="Email" required>
+          <input type="email" #email="ngModel" [(ngModel)]="user.email" name="email" id="loginEmailInput" class="form-control" placeholder="Email" required>
         </div>
         <div class="inputContainer">
-          <input type="password" #password="ngModel" [(ngModel)]="user.password" name="password" id="input" class="input" placeholder="Contrasenya" required>
+          <input type="password" #password="ngModel" [(ngModel)]="user.password" name="password" id="loginPasswordInput" class="form-control" placeholder="Contrasenya" required>
         </div>
-        <div class="inputContainer">
-          <input type="submit" class="submitLogin" name="submit-login" value="LogIn">
+        <div class="button">
+          <input type="submit" class="btn btn-success" name="submit-login" value="Entra">
         </div>
       </form>
 
     </div>
-    
+
     <div class="registerContainer">
-      
+
       <div class="titleContainer">
-        <h1 class="titleStyle">Register</h1>
+        <h1 class="titleStyle" style="color: #007bff">Registra't</h1>
       </div>
 
-      <form  #registerForm="ngForm" class="registerContent">
+      <form  #registerForm="ngForm" class="registerContent" (ngSubmit)="onSubmitRegister()">
         <div class="inputContainer">
-          <input type="text" name="name" id="input" class="input" placeholder="Nom" required>
+          <input type="text" name="name" id="nameInput" class="form-control" placeholder="Nom" [(ngModel)]="user_register.name" required>
         </div>
         <div class="inputContainer">
-          <input type="text" name="lastName" id="input" class="input" placeholder="Cognoms" required>
+          <input type="text" name="lastName" id="lastNameInput" class="form-control" placeholder="Cognoms" [(ngModel)]="user_register.lastName" required>
         </div>
         <div class="inputContainer">
-          <input type="email" name="email" id="input" class="input" placeholder="Email" required>
+          <input type="email" name="email" id="emailInput" class="form-control" placeholder="Email" [(ngModel)]="user_register.email"  required>
         </div>
         <div class="inputContainer">
-          <input type="password" name="password" id="input" class="input" placeholder="Contrasenya" required>
+          <input type="password" name="password" id="passwordInput" class="form-control" placeholder="Contrasenya" [(ngModel)]="user_register.password" required>
         </div>
-        <div class="inputContainer">
-          <input type="submit" class="submitLogin" name="submit-login" value="Registrar-se"/>
+        <div class="button">
+          <input type="submit" class="btn btn-primary" name="submit-login" value="Registra't"/>
         </div>
       </form>
 

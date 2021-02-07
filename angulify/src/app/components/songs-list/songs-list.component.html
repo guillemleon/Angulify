@@ -1,0 +1,18 @@
+<div class="songsContainer">
+  <h1 class="title">{{title}}</h1>
+  <a *ngIf="identity && identity.role === 'ROLE_ADMIN'" [routerLink]="['/song-add']" class="btn">Afegir cançó</a>
+  <div class="songs-list-container">
+    <ul class="songs-list" *ngIf="identity">
+      <li *ngFor="let song of songs" class="song-item">
+        <a class="song-number" (click)="playSong(song.file)">{{song.number}}</a>
+        <p class="song-name" (click)="playSong(song.file)">{{song.name}}</p>
+        <p class="song-dur" (click)="playSong(song.file)">{{song.duration}}</p>
+        <p class="song-file" (click)="playSong(song.file)">{{song.file}}</p>
+        <p class="fav-icon" (click)="addToFav(song)"><i class="fav-icon far fa-heart"></i></p>
+      </li>
+    </ul>
+  </div>
+  <audio autoplay id="audio" controls>
+    <source src='{{currSong}}' type="audio/mpeg">
+  </audio>
+</div>

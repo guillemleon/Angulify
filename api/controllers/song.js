@@ -1,4 +1,3 @@
-'use strict'
 const fs = require('fs');
 const path = require('path');
 const mongoosePaginate = require('mongoose-pagination');
@@ -43,6 +42,22 @@ class Song {
                 model: 'Artist'
             }
         }).exec((err, songs) => {
+            if(err) {
+                res.status(500).send({message: 'Request failed'})
+            } else {
+                if(!songs) {
+                    res.status(404).send({message: 'No songs found'});
+                } else {
+                    res.status(200).send({songs})
+                }
+            }
+        })
+    }
+
+    getAllSongs(req, res) {
+        let find = SongModel.find({}).sort('number');
+
+        find.exec((err, songs) => {
             if(err) {
                 res.status(500).send({message: 'Request failed'})
             } else {
@@ -146,6 +161,7 @@ class Song {
         fs.exists(filePath, (exists) => {
             if(exists) {
                 res.sendFile(path.resolve(filePath))
+                console.log(path.resolve(filePath))
             } else {
                 res.status(200).send({message: 'Song file doesn\'t exists'});
             }

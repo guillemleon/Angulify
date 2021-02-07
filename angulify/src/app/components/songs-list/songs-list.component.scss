@@ -1,0 +1,99 @@
+$green: #1db954;
+$hardGray:#212121;
+$black: #121212;
+$gray: #535353;
+$lightGray: #b3b3b3;
+
+.songsContainer {
+  height: calc(100% - 80px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  box-sizing: border-box;
+}
+
+.title {
+  width: 100%;
+  height: 80px;
+  color: #FFFFFF;
+}
+
+.btn {
+  width: 150px;
+  height: 40px;
+  background-color: $green;
+  border: none;
+  outline: none;
+  color: #FFFFFF;
+}
+
+.songs-list {
+  width: 100%;
+  height: 100%;
+  padding: 40px 0 0 0;
+  margin: 0;
+}
+
+.song-item {
+  color: #FFFFFF;
+  list-style: none;
+  min-width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &:hover {
+    background-color: $green;
+    transition: 0.3s;
+    cursor: pointer;
+
+    .song-name, .song-number {
+      color: #FFFFFF;
+    }
+  }
+}
+
+.songs-list-container {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.song-name {
+  color: $green;
+  font-size: 20px;
+  text-decoration: none;
+  height: 20px;
+  width: calc(100% + 150px);
+}
+
+.song-number {
+  color: $green;
+  font-size: 20px;
+  text-decoration: none;
+  width: 10%;
+}
+
+.song-dur, .song-file {
+  color: #FFFFFF;
+  font-size: 20px;
+  height: 20px;
+}
+
+#audio {
+  height: 150px;
+  outline: none;
+  border: none;
+}
+
+.fav-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  font-size: 1.3em;
+}

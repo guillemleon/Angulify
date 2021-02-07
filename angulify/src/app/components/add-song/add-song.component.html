@@ -1,0 +1,26 @@
+<div class="addSongContainer">
+  <h1 class="title">{{title}}</h1>
+
+  <form #formSong="ngForm" (ngSubmit)="onSubmit()" class="col-lg-6">
+
+    <input class="form-control input" type="number" #number="ngModel" name="number" placeholder="Número" [(ngModel)]="song.number" required />
+    <span class="btn-danger" *ngIf="!number.valid && number.touched">
+      El número és obligatori
+    </span>
+
+    <input class="form-control input" type="text" #name="ngModel" name="name" placeholder="Nom" [(ngModel)]="song.name" required />
+    <span class="btn-danger" *ngIf="!name.valid && name.touched">
+      El nom és obligatori
+    </span>
+
+    <input class="form-control input" #duration="ngModel" name="duration" placeholder="Duració" [(ngModel)]="song.duration" required>
+    <span class="btn-danger" *ngIf="!duration.valid && duration.touched">
+      La duració és obligatoria
+    </span>
+    <br>
+    <!--<input class="form-control input" type="file" #name="ngModel" name="file" placeholder="Fitxer" [(ngModel)]="song.file" required />-->
+    <input class="btn btn-success input" type="submit" value="{{title}}" [disabled]="!formSong.form.valid" />
+
+  </form>
+
+</div>

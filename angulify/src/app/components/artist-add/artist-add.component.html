@@ -1,0 +1,20 @@
+<div class="addArtistContainer">
+  <h1 class="title">{{title}}</h1>
+
+  <form #formArtist="ngForm" (ngSubmit)="onSubmit()" class="col-lg-6">
+
+    <input class="form-control input" type="text" #name="ngModel" name="name" placeholder="Nom" [(ngModel)]="artist.name" required />
+    <span class="btn-danger" *ngIf="!name.valid && name.touched">
+      El nom és obligatori
+    </span>
+
+    <textarea class="form-control input" #description="ngModel" name="description" placeholder="Descripció" [(ngModel)]="artist.description" required></textarea>
+    <span class="btn-danger" *ngIf="!description.valid && description.touched">
+      La descripció és obligatoria
+    </span>
+    <br>
+    <input class="btn btn-success input" type="submit" value="{{title}}" [disabled]="!formArtist.form.valid" />
+
+  </form>
+
+</div>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="da2f3fd7-a408-427a-9574-fe8a7c1a3ab2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/angulify/src/app/components/artist-edit/artist-edit.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angulify/src/app/global/functions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angulify/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angulify/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angulify/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angulify/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angulify/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/angulify/src/app/app.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angulify/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angulify/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angulify/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angulify/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angulify/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/angulify/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/controllers/album.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controllers/album.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/controllers/artist.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controllers/artist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/controllers/song.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controllers/song.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/controllers/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controllers/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/database.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/middlewares/authenticated.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/middlewares/authenticated.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/models/album.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/album.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/models/artist.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/artist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/models/song.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/song.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/routes/album.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/album.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/routes/artist.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/artist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/routes/song.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/song.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/services/jwt.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/services/jwt.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1o6t3X4PezOIcysXhKevyQQLBpX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/angulify/src/app/components/artist-edit" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Users\guillem\WebstormProjects\Angulify\angulify\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\guillem\WebstormProjects\Angulify\angulify\src\app\components\artist-edit" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\guillem\WebstormProjects\Angulify\angulify\src\app\components" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="da2f3fd7-a408-427a-9574-fe8a7c1a3ab2" name="Default Changelist" comment="" />
+      <created>1612618679447</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612618679447</updated>
+      <workItem from="1612618686198" duration="14313000" />
+      <workItem from="1612695072141" duration="31482000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="828" y="431" key="#TSLint" timestamp="1612621594224">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="828" y="431" key="#TSLint/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1612621594224" />
+    <state x="651" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612726761731">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="651" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1612726761731" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1612711614285">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1612711614285" />
+    <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1612709117302">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="119" width="585" height="801" key="find.popup/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1612709117302" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1612708072845">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1612708072845" />
+  </component>
+</project>

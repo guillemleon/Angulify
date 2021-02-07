@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Spotify clone app",
   "main": "index.js",
+  "styles": [
+    "node_modules/bootstrap/dist/css/bootstrap.min.css",
+    "src/styles.scss"
+  ],
   "scripts": {
     "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"

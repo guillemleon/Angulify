@@ -1,4 +1,3 @@
-'use strict'
 const fs = require('fs');
 const path = require('path');
 const mongoosePaginate = require('mongoose-pagination');
@@ -45,6 +44,21 @@ class Artist {
                 }
             }
         })
+    }
+
+    getAllArtists(req, res) {
+        ArtistModel.find().sort('name').exec((err, artists) =>  {
+            console.log(artists)
+            if(err) {
+                res.status(500).send({message: 'Request failed'})
+            } else {
+                if(!artists) {
+                    res.status(404).send({message: 'No artists found'});
+                } else {
+                    res.status(200).send({artists})
+                }
+            }
+        });
     }
 
     updateArtist(req, res) {

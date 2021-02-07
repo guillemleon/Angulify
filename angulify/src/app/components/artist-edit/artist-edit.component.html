@@ -1,0 +1,28 @@
+<div class="addArtistContainer">
+  <h1 class="title">{{title}}</h1>
+
+  <form #formArtist="ngForm" (ngSubmit)="onSubmit()" class="col-lg-6">
+
+    <input class="form-control input" type="text" #name="ngModel" name="name" placeholder="Nom" [(ngModel)]="artist.name" required />
+    <span class="btn-danger" *ngIf="!name.valid && name.touched">
+      El nom és obligatori
+    </span>
+
+    <textarea class="form-control input" #description="ngModel" name="description" placeholder="Descripció" [(ngModel)]="artist.description" required></textarea>
+    <span class="btn-danger" *ngIf="!description.valid && description.touched">
+      La descripció és obligatoria
+    </span>
+    <br>
+    <input class="btn btn-success input" type="submit" value="{{title}}" [disabled]="!formArtist.form.valid" />
+
+    <div *ngIf="is_edit">
+      <div class="image_for_edit" *ngIf="artist.image !== null">
+        <img src="http://localhost:3000/api/get-artist-image/{{artist.image}}" alt="">
+      </div>
+    </div>
+    <!--(change)="fileChangeEvent($event)"-->
+    <input class="form-control input" type="file" #image="ngModel" placeholder="Puja una imatge" name="image" [(ngModel)]="artist.image" required />
+
+  </form>
+
+</div>

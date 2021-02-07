@@ -1,0 +1,25 @@
+  <div class="content">
+    <div class="newDataContainer">
+      <div class="newUserInfo">
+        <form #updateUserForm="ngForm" (ngSubmit)="onSubmit()" class="userInfoColumn">
+          <div class="row">
+            <p class="label">ACTUALITZA LES TEVES DADES</p>
+          </div>
+          <div class="row">
+            <input class="form-control input" type="text" #name="ngModel" name="name" placeholder="Nom" [(ngModel)]="user.name" required />
+          </div>
+          <div class="row">
+            <input class="form-control input" type="text" #lastName="ngModel" name="lastName" placeholder="Cognoms" [(ngModel)]="user.lastName" required />
+          </div>
+          <div class="row">
+            <input class="form-control input" type="text" #email="ngModel" name="email" placeholder="Email" [(ngModel)]="user.email" required />
+          </div>
+          <div class="row">
+            <div class="inputContainer">
+              <input type="submit" class="btn btn-success" name="submit" value="Guardar">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>

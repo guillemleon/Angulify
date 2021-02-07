@@ -1,4 +1,3 @@
-'use strict'
 const User = require('../models/user');
 const bcrypt = require('bcrypt-nodejs');
 const fs = require('fs');
@@ -54,7 +53,7 @@ class UserController {
     // LOGIN
     login(req, res) {
         const params = req.body;
-
+        console.log(params);
         const email = params.email;
         const password = params.password;
 

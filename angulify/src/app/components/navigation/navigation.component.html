@@ -1,0 +1,21 @@
+<div class="navigationContainer">
+  <div class="navigationContent">
+    <div class="title">
+      <h1 class="titleMessage">{{title}}</h1>
+    </div>
+    <ul class="navItems">
+      <li class="item">
+        <a [routerLink]="['/artists']" [routerLinkActive]="['activedClickable']" class="clickable">Artistes</a>
+      </li>
+      <li class="item">
+        <a [routerLink]="['/songs']" [routerLinkActive]="['activedClickable']" class="clickable">Cançons</a>
+      </li>
+      <li class="item">
+        <a [routerLink]="['/profile']" [routerLinkActive]="['activedClickable']" class="clickable">Perfil</a>
+      </li>
+      <li class="item">
+        <a (click)="logout()" class="clickable">Sortir</a>
+      </li>
+    </ul>
+  </div>
+</div>
